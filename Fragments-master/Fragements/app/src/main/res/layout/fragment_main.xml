@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnpaladin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnhunter"
+        android:layout_below="@+id/btnhunter"
+        android:layout_marginTop="22dp"
+        android:text="Paladin" />
+
+    <Button
+        android:id="@+id/btnhunter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Hunter"
+        android:layout_below="@+id/btnhealer"
+        android:layout_alignStart="@+id/btnhealer" />
+
+    <Button
+        android:id="@+id/btnhealer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Healer"
+        android:layout_below="@+id/btnmage"
+        android:layout_alignStart="@+id/btnmage" />
+
+    <Button
+        android:id="@+id/btnmage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mage"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnwarrior"
+        android:layout_alignStart="@+id/btnwarrior" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Marco Seman Program 2"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/btnwarrior"
+        android:text="Warrior"
+        android:layout_below="@+id/textTitle"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

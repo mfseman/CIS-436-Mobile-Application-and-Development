@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcsem.cis436program3.MainActivity">
+
+    <TextView
+        android:id="@+id/notifytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highest Notification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <Button
+        android:id="@+id/setCountbtn"
+        android:layout_width="155dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="66dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="68dp"
+        android:text="Set Count Down"
+        app:layout_constraintBottom_toBottomOf="@+id/notifytxt"
+        app:layout_constraintLeft_toLeftOf="@+id/setEdit"
+        app:layout_constraintTop_toTopOf="@+id/setEdit"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="19dp"
+        android:text="Start Countdown"
+        app:layout_constraintLeft_toLeftOf="@+id/notifytxt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NotificationEdit"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/setEdit"
+        android:layout_width="179dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="number"
+        android:digits="0123456789"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/highedit"
+        android:layout_width="238dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setCountbtn"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/NotificationEdit"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintRight_toRightOf="@+id/highedit"
+        app:layout_constraintTop_toBottomOf="@+id/highedit"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/countDowntxt"
+        android:layout_width="160dp"
+        android:layout_height="38dp"
+        android:text="Time to Count Down:"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/setCountbtn"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="29dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/messagetxt"
+        android:layout_width="69dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="205dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="205dp"
+        android:text="Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/notifytxt"
+        app:layout_constraintTop_toBottomOf="@+id/countDowntxt"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

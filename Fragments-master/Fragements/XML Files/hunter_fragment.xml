@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/strtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="Strength"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignBottom="@+id/strbar"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/dextxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dexbar"
+        android:layout_alignStart="@+id/strtxt"
+        android:text="Dexterity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/wistxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/wisbar"
+        android:layout_alignStart="@+id/dextxt"
+        android:text="Wisdom"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <RatingBar
+        android:id="@+id/wisbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="4"
+        android:stepSize="1"
+        android:layout_below="@+id/intbar"
+        android:layout_alignStart="@+id/intbar"
+        android:layout_marginTop="18dp" />
+
+    <RatingBar
+        android:id="@+id/intbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:numStars="4"
+        android:stepSize="1"
+        android:layout_below="@+id/strbar"
+        android:layout_toEndOf="@+id/inttxt"
+        android:layout_marginStart="22dp" />
+
+    <RatingBar
+        android:id="@+id/strbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:numStars="4"
+        android:stepSize="1"
+        android:layout_below="@+id/paladintxt"
+        android:layout_alignStart="@+id/intbar" />
+
+    <TextView
+        android:id="@+id/paladintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Hunter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <RatingBar
+        android:id="@+id/dexbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:numStars="4"
+        android:stepSize="1"
+        android:layout_below="@+id/wisbar"
+        android:layout_alignStart="@+id/wisbar" />
+
+    <TextView
+        android:id="@+id/inttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/intbar"
+        android:layout_alignStart="@+id/wistxt"
+        android:text="Intellect"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/pointstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dextxt"
+        android:layout_below="@+id/dextxt"
+        android:layout_marginTop="46dp"
+        android:text="Points left to spend: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/numtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignBaseline="@+id/pointstxt"
+        android:layout_alignBottom="@+id/pointstxt"
+        android:layout_toEndOf="@+id/paladintxt" />
+
+</RelativeLayout>
